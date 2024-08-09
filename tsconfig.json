@@ -1,0 +1,18 @@
+{  /// En este archivo hay ciertas reglas
+    "compilerOptions": {      //// Agregar esta opcion
+        "outDir": "./dist",   //// Cuando lo compile lo va a crear en la carpeta
+        "rootDir": "./src",   //// El directorio principal va a ser SRC
+        "lib": ["esnext"],    //// Cosas a soportar
+        "target": "ESNext",   
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
+        "strict": false,     //// dejar en false porque si se pone true no deja ningun any
+        "sourceMap": true,   //// Genera los mapas
+        "esModuleInterop": true,   /////  
+        "declaration": true,       /////  crea los archivos de definicion index.d.ts y server.d.ts
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": ["src/**/*.ts"],   ///// indica que archivos se va a querer en la compilacion, que seria todo los archivos ts que esten en src
+    "exclude": ["src/**/*.test.ts"]
+}
